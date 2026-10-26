@@ -30,7 +30,6 @@ export const PeoplePage = () => {
   useEffect(() => {
     setIsLoading(true);
 
-    getPeople();
     getPeople()
       .then(peopleFromServer => {
         const peopleWithParents = peopleFromServer.map(person => ({
